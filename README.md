@@ -73,7 +73,12 @@
        is_read BOOLEAN DEFAULT FALSE
      );
      ```
-
+   - В `console-chat-server-db.cpp` введите данные для подключения к БД:
+       ```cpp
+       std::string dbConnectionStr = "host=localhost port=5432 dbname=chat user=username password=password";  // строка подключения к БД
+       ```
+       - где username - имя пользователя от БД
+       - password - пароль от пользователя БД
 2. **Установка `libpqxx`:**
 
    - Скачайте и установите `libpqxx` соответствующей версии для вашей системы.
